@@ -72,6 +72,7 @@ $(document).ready(function(){
         }
       });
     }
+    
   
     var markTaskActive = function (id) {
       $.ajax({
