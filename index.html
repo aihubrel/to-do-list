@@ -12,17 +12,33 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>To Do List</h2>
-          <div id='todo-list'>
+        <div class="row"></div>
+        <h2>To-do List</h2>
+          <div class="col-xs-12 main">
+            <div class="todo-list">
+            </div>
+          </div>  
+    
+          <div class="col-xs-12 form-section">
+              <p>Add New Task</p>
+              <form class="create-task">
+              <input  id="new-task-content" type="text" placeholder="task name?" required>
+              <p>Due Date</p>
+              <input id="due-date" type="date" placeholder="9/18/2024" required/>
+              <button>Create</button>
+            </form>
           </div>
-          <form id="create-task">
-            <input id="new-task-content" type="text" placeholder="new task" required/>
-            <button>Create</button>
-          </form>
+    
+          <div class="col-xs-12 toggles">
+            <div class="to-do-filter ">
+              <button class="filter-item active" id="active">Active</button>
+              <button class="filter-item" id="completed">Completed</button>
+              <button class="filter-item" id="all">All</button>
+            </div>
+          </div>
+    
+          <div id="test"></div>
         </div>
       </div>
-    </div>
   </body>
 </html>
