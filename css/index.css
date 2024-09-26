@@ -1,0 +1,44 @@
+/*index.css*/
+body {
+    text-align: center;
+    background-image: url(../image/blackboard.jpg);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: 50% -10%;
+    color: white;
+    font-family: bradley hand, cursive ;
+    font-weight: bold;
+}
+
+.container {
+    margin: auto;
+    width: 500px;  
+}
+
+
+.main{
+    margin-top: 110px;
+    text-align: left;
+}
+
+.form-section{
+    margin-top: 50px;
+}
+
+h2 {
+    color: blue;
+  }
+
+
+
+#todo-list {
+    margin: auto;
+}  
+
+button, input {
+    color: black;
+}
+
+.toggles {
+    margin-top: 50px;
+}
