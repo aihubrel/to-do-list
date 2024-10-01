@@ -43,15 +43,11 @@ var filterResults = function () {
         });
   
         sortedItems.forEach(function (task) {
-          var taskContent = `
-            <div class="to-do">
-            <div class="row"><p class="col-xs-8"> ${task.content} 
-            <br>Due: ${task.due}</p>
-            <button class="delete" data-id="${task.id}">x</button>
-            <input type="checkbox" id ="${task.id}" class="select" data-id="${task.id}"(task.completed ? 'checked' : '') + '>
-          `;
-          $('.todo-list').append(taskContent);
-        })
+          $('.todo-list').append('<div class="row"><p class="col-xs-8">' 
+            + task.content + '<br>Due:'+task.due+'</p><button class="delete" data-id="' 
+            + task.id + '">Delete</button><input type="checkbox" class="select" data-id="' 
+            + task.id + '"' + (task.completed ? 'checked' : '') + '>');
+        });
         
         // update the amount of task items
         $('.to-do-amount span').text(returnActiveTasks.length);
@@ -133,6 +129,11 @@ var filterResults = function () {
         console.log(errorMessage);
       }
     }); 
+  }
+
+  function OptionsSelected(selection)
+  {
+      $("#test").append(selection.id);                                                                                                             
   }
   
   $(document).ready(function () {
